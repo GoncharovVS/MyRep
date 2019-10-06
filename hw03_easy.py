@@ -35,8 +35,9 @@ while True:
     elif key == 2:
 
         def lucky_ticket(ticket_number):
-
             ticket_number = str(ticket_number)
+            if len(ticket_number) % 2 != 0:
+                return False
             ticket_number_list = []
             for symbol in ticket_number:
                 ticket_number_list.append(int(symbol))

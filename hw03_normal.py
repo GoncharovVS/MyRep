@@ -35,7 +35,7 @@ while True:
     elif key == 2:
 
         def sort_to_max(origin_list):
-            if len(origin_list) <= 2:
+            if len(origin_list) < 2:
                 return origin_list
             else:
                 key_item = random.choice(origin_list)
